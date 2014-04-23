@@ -1,0 +1,12 @@
+@charset "utf-8";
+.ui-listview>li>a.ui-btn {
+	text-align: center;
+}
+.logo {
+	float: left;
+	height: 28px;
+	width: 26px;
+}
+h4 {
+	text-align: center;
+}

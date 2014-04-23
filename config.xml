@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.bmx.bmxapp"
+        versionCode = "1" 
+        version     = "0.0.1" >
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>BmxApp</name>
+
+    <description>
+        Una aplicación con la cual podrás tener toda la informacíón acerca del bmx. 
+    </description>
+
+    <author href="https://bmxapp.bmx.com" email="leonardostyled@gmail.com">
+        Leonardo Lopez 
+    </author>
+    <icon src="icon.png" />
+
+</widget>
