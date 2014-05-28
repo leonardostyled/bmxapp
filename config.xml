@@ -17,6 +17,6 @@
         Leonardo Lopez 
     </author>
     <icon src="icon.png" />
-    <gap:splash src="splash.png" />
+    <gap:splash src="splash.png" />0
 
 </widget>
