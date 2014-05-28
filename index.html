@@ -2,10 +2,13 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Untitled Document</title>
-<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
-<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<title>BMXAPP</title>
+<link rel="stylesheet" href="themes/temaA.min.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile.structure-1.4.2.min.css" />
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
 <link href="estilo.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -17,9 +20,9 @@
 
 
 <div data-role="page"id="inicio">
-	<div data-role="header" data-theme="b" data-position="fixed">
-    	<img src="appbmx.png" class="logo">
-        <a href="#perfil" class=" ui-btn ui-corner-all ui-btn-right ui-mini ui-btn-icon-notext ui-icon-user iu-btn-a">Volver</a>
+	<div data-role="header" data-theme="a" data-position="fixed">
+      <a href="#inicio" data-role="none"><img src="appbmx.png" class="logo"></a>
+      <a href="#perfil" class=" ui-btn ui-corner-all ui-btn-right ui-mini ui-btn-icon-notext ui-icon-user iu-btn-a">Volver</a>
         <h1>BMXAPP</h1>
               
     </div>
@@ -28,12 +31,12 @@
              <ul data-role="listview" data-inset="true">
                 <li><a href="#Noticia1">
                 <img src="garrett.jpg" width="171" height="171">
-                <h2>Nuevo Video</h2>
+                <h2>Nike</h2>
                 <p>Disfrutalo!</p></a>
                </li>
                 <li><a href="#Noticia2">
                 <img src="ojobmx.jpg" width="171" height="171">
-                <h2>Tutorial de como hacer barspin!</h2>
+                <h2>OjoBmx</h2>
                 <p>Miralo ahora!</p></a>
                 </li>
                 <li><a href="#Noticia3">
@@ -48,14 +51,14 @@
                 </li>
                 <li><a href="#Noticia5">
                 <img src="noticia 5.jpg" width="171" height="171">
-                <h2>Las tres tendencias</h2>
+                <h2>Marcas Favoritas</h2>
                 <p>Echa un vistazo!</p></a>
                 </li>
 	  </ul>
         
         
  	</div>
-	<div data-role="footer" data-theme="b" data-position="fixed">
+	<div data-role="footer" data-theme="A" data-position="fixed">
     	<div data-role="navbar">
             <ul>
                 <li><a href="#" class="ui-btn-active ui-icon-home ui-btn-icon-top">Inicio</a></li>
@@ -71,8 +74,8 @@
 <!--   *********** PAGINA DOS (Eventos)******************          -->
 
 <div data-role="page" id="eventos">
-	<div data-role="header" data-theme="b" data-position="fixed">
-    	<img src="appbmx.png" class="logo">
+	<div data-role="header" data-theme="a" data-position="fixed">
+    	<a href="#inicio" data-role="none"><img src="appbmx.png" class="logo"></a>
     	<a href="#perfil" class=" ui-btn ui-corner-all ui-btn-right ui-mini ui-btn-icon-notext ui-icon-user iu-btn-a">Volver</a>
     	<h1>BMXAPP</h1>
      </div>
@@ -80,9 +83,9 @@
         <h4>EVENTOS</h4>
         
        			<ul data-role="listview" data-inset="true">
-                <li><a href="#concurso 3sesenta">
+                <li><a href="#concurso3sesenta">
                 <img src="3sesenta.jpg" width="171" height="171">
-                <h2>Concurso 3Sesnta</h2>
+                <h2>Concurso 3Sesenta</h2>
                 <p>Hoy</p></a>
                </li>
                 <li><a href="#Snickers">
@@ -123,7 +126,7 @@
              
  	</div>
 
-	<div data-role="footer"data-theme="b" data-position="fixed">
+	<div data-role="footer"data-theme="A" data-position="fixed">
    		<div data-role="navbar">
     		<ul>
             	<li><a href="#inicio" class="ui-btn-active ui-icon-home ui-btn-icon-top">Inicio</a></li>
@@ -140,8 +143,8 @@
 <!--   *********** PAGINA TRES (Perfil)******************          -->
 
 <div data-role="page" id="perfil">
-	<div data-role="header" data-theme="b" data-position="fixed">
-    	<img src="appbmx.png" class="logo">
+	<div data-role="header" data-theme="a" data-position="fixed">
+    	<a href="#inicio" data-role="none"><img src="appbmx.png" class="logo"></a>
     	<a href="#perfil" class=" ui-btn ui-corner-all ui-btn-right ui-mini ui-btn-icon-notext ui-icon-user iu-btn-a">Volver</a>
     	<h1>BMXAPP</h1>
     </div>
@@ -149,7 +152,7 @@
    		
         
         <div class="ui-body ui-body-a ui-corner-all">
-<h3>PERFIL</h3>
+<h3><center>PERFIL</center></h3>
 
 <img src="perfil.jpg" width="250" height="200"><!-- /navbar -->
             
@@ -190,8 +193,8 @@
 </div>
         
         <a href="#popupNested" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-bars ui-btn-icon-left ui-btn-b" data-transition="pop">Editar perfil</a>
-        <div data-role="popup" id="popupNested" data-theme="none">
-    <div data-role="collapsibleset" data-theme="b" data-content-theme="a" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" style="margin:0; width:250px;">
+        <div data-role="popup" id="popupNested" data-theme="A">
+    <div data-role="collapsibleset" data-theme="A" data-content-theme="a" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" style="margin:0; width:250px;">
         <div data-role="collapsible" data-inset="false">
         <h2>Datos Personales</h2>
             <ul data-role="listview">
@@ -223,7 +226,7 @@
 </div><!-- /popup -->
         
 </div>
-	<div data-role="footer"data-theme="b" data-position="fixed">
+	<div data-role="footer"data-theme="A" data-position="fixed">
    		<div data-role="navbar">
     		<ul>
             	<li><a href="#inicio" class="ui-btn-active ui-icon-home ui-btn-icon-top">Inicio</a></li>
@@ -239,16 +242,16 @@
 
 <!--   *********** PAGINA CUATRO (Evento-3Sesenta)******************          -->
 
-<div data-role="page" id="concurso 3sesenta">
-	<div data-role="header" data-theme="b" data-position="fixed">
-    	<img src="appbmx.png" class="logo">
+<div data-role="page" id="concurso3sesenta">
+	<div data-role="header" data-theme="a" data-position="fixed">
+    	<a href="#inicio" data-role="none"><img src="appbmx.png" class="logo"></a>
     	<a href="#perfil" class=" ui-btn ui-corner-all ui-btn-right ui-mini ui-btn-icon-notext ui-icon-user iu-btn-a">Volver</a>
     	<h1>BMXAPP</h1>
     </div>
 	<div role="main" class="ui-content">    
    		<h4>CONCURSO 3SESENTA</h4>
         
-       <div data-role="collapsibleset" data-theme="a"data-content-theme="a">
+       <div data-role="collapsibleset" data-theme="A"data-content-theme="a">
             
             <div data-role="navbar">
 <ul>
@@ -260,8 +263,8 @@
          <div data-role="collapsible">
            <h3>Información del evento</h3>
            <p>Fecha: 20-Abril-2013</p>
-            <p>Lugar:Av 68, Bogotá, Bogotá, D.C.</p>
-            <p>Horario: 3:00 pm - 7:00pm</p>
+            <p>Lugar: Parque Metropolitano Simón Bolívar</p>
+           <p>Horario: 3:00 pm - 7:00pm</p>
             <p>Organiza: 3Sesenta Bike Shop</p>
            </div>
             <div data-role="collapsible">
@@ -280,9 +283,63 @@
 </div>
          </div>
 
+		<!-- Mapa de Google -->
+        <div id="map7">
+            <!-- map loads here... -->
+        </div>
+        <script>
+		$( document ).on("pagecreate", "#concurso3sesenta", function() {
+			var directionsDisplay = new google.maps.DirectionsRenderer();;
+			var directionsService = new google.maps.DirectionsService();
+			var map;
+			var origen = new google.maps.LatLng(4.6959449,-74.0936429);
+			var destino = new google.maps.LatLng(4.659179,-74.0914518);
+			if ( navigator.geolocation ) {
+				function success(pos) {
+					// Location found, show map with these coordinates
+					drawMap(new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude));
+				}
+				function fail(error) {
+					drawMap(origen);  // Failed to find location, show default map
+				}
+				// Find the users current position.  Cache the location for 5 minutes, timeout after 6 seconds
+				navigator.geolocation.getCurrentPosition(success, fail, {maximumAge: 500000, enableHighAccuracy:true, timeout: 6000});
+			} else {
+				drawMap(origen);  // No geolocation support, show default map
+			}
+			function drawMap(latlng) {
+				var myOptions = {
+					zoom: 10,
+					center: latlng,
+					mapTypeId: google.maps.MapTypeId.ROADMAP
+				};
+				map = new google.maps.Map(document.getElementById("map7"), myOptions);
+				directionsDisplay.setMap(map);
+				calcRoute();
+				function calcRoute() {
+				  var request = {
+					  origin: origen,
+					  destination: destino,
+					  // Note that Javascript allows us to access the constant
+					  // using square brackets and a string value as its
+					  // "property."
+					  travelMode: google.maps.TravelMode['DRIVING']
+				  };
+				  directionsService.route(request, function(response, status) {
+					if (status == google.maps.DirectionsStatus.OK) {
+					  directionsDisplay.setDirections(response);
+					}
+				  });
+				}
+			}
+		});
+		</script>
+        <style>
+		#concurso3sesenta #map7 { width: 100%; height: 500px; padding: 0; }
+		</style>
 
     </div>
-	<div data-role="footer"data-theme="b" data-position="fixed">
+	<div data-role="footer"data-theme="A" data-position="fixed">
    		<div data-role="navbar">
     		<ul>
             	<li><a href="#inicio" class="ui-btn-active ui-icon-home ui-btn-icon-top">Inicio</a></li>
@@ -299,8 +356,8 @@
 <!--   *********** PAGINA CINCO (Evento-Snickers)******************          -->
 
 <div data-role="page" id="Snickers">
-	<div data-role="header" data-theme="b" data-position="fixed">
-    	<img src="appbmx.png" class="logo">
+	<div data-role="header" data-theme="a" data-position="fixed">
+    	<a href="#inicio" data-role="none"><img src="appbmx.png" class="logo"></a>
     	<a href="#perfil" class=" ui-btn ui-corner-all ui-btn-right ui-mini ui-btn-icon-notext ui-icon-user iu-btn-a">Volver</a>
     	<h1>BMXAPP</h1>
     </div>
@@ -319,7 +376,7 @@
          <div data-role="collapsible">
            <h3>Información del evento</h3>
            <p>Fecha: 20-Abril-2013</p>
-            <p>Lugar:Avenida Ciudad de Quito, Cra. 30 Cl. 57</p>
+            <p>Lugar: Coliséo Cubierto el Campín.</p>
             <p>Horario: 1:00 pm - 10:00pm</p>
             <p>Organiza: Snickers Team</p>
            </div>
@@ -341,10 +398,67 @@
            <p>- Partes para bicicletas.</p>
            <p>&nbsp;</p>
           </div>
-         </div> 
+         </div>
+         
+         
+         	<!-- Mapa de Google -->
+        <div id="map6">
+            <!-- map loads here... -->
+        </div>
+        <script>
+		$( document ).on("pagecreate", "#Snickers", function() {
+			var directionsDisplay = new google.maps.DirectionsRenderer();;
+			var directionsService = new google.maps.DirectionsService();
+			var map;
+			var origen = new google.maps.LatLng(4.6959449,-74.0936429);
+			var destino = new google.maps.LatLng(4.649436,-74.077194);
+			if ( navigator.geolocation ) {
+				function success(pos) {
+					// Location found, show map with these coordinates
+					drawMap(new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude));
+				}
+				function fail(error) {
+					drawMap(origen);  // Failed to find location, show default map
+				}
+				// Find the users current position.  Cache the location for 5 minutes, timeout after 6 seconds
+				navigator.geolocation.getCurrentPosition(success, fail, {maximumAge: 500000, enableHighAccuracy:true, timeout: 6000});
+			} else {
+				drawMap(origen);  // No geolocation support, show default map
+			}
+			function drawMap(latlng) {
+				var myOptions = {
+					zoom: 10,
+					center: latlng,
+					mapTypeId: google.maps.MapTypeId.ROADMAP
+				};
+				map = new google.maps.Map(document.getElementById("map6"), myOptions);
+				directionsDisplay.setMap(map);
+				calcRoute();
+				function calcRoute() {
+				  var request = {
+					  origin: origen,
+					  destination: destino,
+					  // Note that Javascript allows us to access the constant
+					  // using square brackets and a string value as its
+					  // "property."
+					  travelMode: google.maps.TravelMode['DRIVING']
+				  };
+				  directionsService.route(request, function(response, status) {
+					if (status == google.maps.DirectionsStatus.OK) {
+					  directionsDisplay.setDirections(response);
+					}
+				  });
+				}
+			}
+		});
+		</script>
+        <style>
+		#Snickers #map6 { width: 100%; height: 500px; padding: 0; }
+		</style>
+          
          
     </div>
-	<div data-role="footer"data-theme="b" data-position="fixed">
+	<div data-role="footer"data-theme="A" data-position="fixed">
    		<div data-role="navbar">
     		<ul>
             	<li><a href="#inicio" class="ui-btn-active ui-icon-home ui-btn-icon-top">Inicio</a></li>
@@ -359,8 +473,8 @@
 <!--   *********** PAGINA SEIS (Evento-PiranaBikes)******************          -->
 
 <div data-role="page" id="PiranaBikes">
-	<div data-role="header" data-theme="b" data-position="fixed">
-    	<img src="appbmx.png" class="logo">
+	<div data-role="header" data-theme="a" data-position="fixed">
+    	<a href="#inicio" data-role="none"><img src="appbmx.png" class="logo"></a>
     	<a href="#perfil" class=" ui-btn ui-corner-all ui-btn-right ui-mini ui-btn-icon-notext ui-icon-user iu-btn-a">Volver</a>
     	<h1>BMXAPP</h1>
         </div>
@@ -379,7 +493,7 @@
          <div data-role="collapsible">
            <h3>Información del evento</h3>
            <p>Fecha: 21-Abril-2013</p>
-            <p>Lugar: Carrera 37 # 24-67, Bogotá, D.C.</p>
+            <p>Lugar: Corferias.</p>
             <p>Horario: 4:00 pm - 8:00pm</p>
             <p>Organiza: Piraña Bikes</p>
           </div>
@@ -388,9 +502,65 @@
            <p>La tienda de bicicletas Piraña llevará a cabo un nuevo evento en la modalidad de calle, los ganadores del primer y segundo puesto podrán ser patrocinados por la tienda además repuestos para bicicletas.</p>
           </div>
          </div>
+         
+         
+         <!-- Mapa de Google -->
+        <div id="map5">
+            <!-- map loads here... -->
+        </div>
+        <script>
+		$( document ).on("pagecreate", "#PiranaBikes", function() {
+			var directionsDisplay = new google.maps.DirectionsRenderer();;
+			var directionsService = new google.maps.DirectionsService();
+			var map;
+			var origen = new google.maps.LatLng(4.6959449,-74.0936429);
+			var destino = new google.maps.LatLng(4.63011,-74.09219);
+			if ( navigator.geolocation ) {
+				function success(pos) {
+					// Location found, show map with these coordinates
+					drawMap(new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude));
+				}
+				function fail(error) {
+					drawMap(origen);  // Failed to find location, show default map
+				}
+				// Find the users current position.  Cache the location for 5 minutes, timeout after 6 seconds
+				navigator.geolocation.getCurrentPosition(success, fail, {maximumAge: 500000, enableHighAccuracy:true, timeout: 6000});
+			} else {
+				drawMap(origen);  // No geolocation support, show default map
+			}
+			function drawMap(latlng) {
+				var myOptions = {
+					zoom: 10,
+					center: latlng,
+					mapTypeId: google.maps.MapTypeId.ROADMAP
+				};
+				map = new google.maps.Map(document.getElementById("map5"), myOptions);
+				directionsDisplay.setMap(map);
+				calcRoute();
+				function calcRoute() {
+				  var request = {
+					  origin: origen,
+					  destination: destino,
+					  // Note that Javascript allows us to access the constant
+					  // using square brackets and a string value as its
+					  // "property."
+					  travelMode: google.maps.TravelMode['DRIVING']
+				  };
+				  directionsService.route(request, function(response, status) {
+					if (status == google.maps.DirectionsStatus.OK) {
+					  directionsDisplay.setDirections(response);
+					}
+				  });
+				}
+			}
+		});
+		</script>
+        <style>
+		#PiranaBikes #map5 { width: 100%; height: 500px; padding: 0; }
+		</style>
         
     </div>
-	<div data-role="footer"data-theme="b" data-position="fixed">
+	<div data-role="footer"data-theme="A" data-position="fixed">
    		<div data-role="navbar">
     		<ul>
             	<li><a href="#inicio" class="ui-btn-active ui-icon-home ui-btn-icon-top">Inicio</a></li>
@@ -406,8 +576,8 @@
 <!--   *********** PAGINA SIETE (Evento-Flybikes)******************          -->
 
 <div data-role="page" id="Flybikes">
-	<div data-role="header" data-theme="b" data-position="fixed">
-    	<img src="appbmx.png" class="logo">
+	<div data-role="header" data-theme="a" data-position="fixed">
+    	<a href="#inicio" data-role="none"><img src="appbmx.png" class="logo"></a>
     	<a href="#perfil" class=" ui-btn ui-corner-all ui-btn-right ui-mini ui-btn-icon-notext ui-icon-user iu-btn-a">Volver</a>
     	<h1>BMXAPP</h1>
     </div>
@@ -426,7 +596,7 @@
          <div data-role="collapsible">
            <h3>Información del evento</h3>
            <p>Fecha: 22-Abril-2013</p>
-            <p>Lugar:Av 63 # No. 68-95, Bogotá, D.C.</p>
+            <p>Lugar:Jardín Botánico</p>
             <p>Horario: 3:00 pm - 7:00pm</p>
             <p>Organiza: FlyBikes Team</p>
            </div>
@@ -439,9 +609,67 @@
            <p> Estos firmaran autografos y darán un demostración de sus hábilidades en la modalidad de Park</p>
           </div>
          </div>
+         
+         
+                <!-- Mapa de Google -->
+        <div id="map4">
+            <!-- map loads here... -->
+        </div>
+        <script>
+		$( document ).on("pagecreate", "#Flybikes", function() {
+			var directionsDisplay = new google.maps.DirectionsRenderer();;
+			var directionsService = new google.maps.DirectionsService();
+			var map;
+			var origen = new google.maps.LatLng(4.6959449,-74.0936429);
+			var destino = new google.maps.LatLng(4.668243,-74.096864);
+			if ( navigator.geolocation ) {
+				function success(pos) {
+					// Location found, show map with these coordinates
+					drawMap(new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude));
+				}
+				function fail(error) {
+					drawMap(origen);  // Failed to find location, show default map
+				}
+				// Find the users current position.  Cache the location for 5 minutes, timeout after 6 seconds
+				navigator.geolocation.getCurrentPosition(success, fail, {maximumAge: 500000, enableHighAccuracy:true, timeout: 6000});
+			} else {
+				drawMap(origen);  // No geolocation support, show default map
+			}
+			function drawMap(latlng) {
+				var myOptions = {
+					zoom: 10,
+					center: latlng,
+					mapTypeId: google.maps.MapTypeId.ROADMAP
+				};
+				map = new google.maps.Map(document.getElementById("map4"), myOptions);
+				directionsDisplay.setMap(map);
+				calcRoute();
+				function calcRoute() {
+				  var request = {
+					  origin: origen,
+					  destination: destino,
+					  // Note that Javascript allows us to access the constant
+					  // using square brackets and a string value as its
+					  // "property."
+					  travelMode: google.maps.TravelMode['DRIVING']
+				  };
+				  directionsService.route(request, function(response, status) {
+					if (status == google.maps.DirectionsStatus.OK) {
+					  directionsDisplay.setDirections(response);
+					}
+				  });
+				}
+			}
+		});
+		</script>
+        <style>
+		#Flybikes #map4 { width: 100%; height: 500px; padding: 0; }
+		</style>       
+              
+         	
         
     </div>
-	<div data-role="footer"data-theme="b" data-position="fixed">
+	<div data-role="footer"data-theme="A" data-position="fixed">
    		<div data-role="navbar">
     		<ul>
             	<li><a href="#inicio" class="ui-btn-active ui-icon-home ui-btn-icon-top">Inicio</a></li>
@@ -457,8 +685,8 @@
 <!--   *********** PAGINA OCHO  (Evento-Optimus)******************          -->
 
 <div data-role="page" id="Optimus">
-	<div data-role="header" data-theme="b" data-position="fixed">
-    	<img src="appbmx.png" class="logo">
+	<div data-role="header" data-theme="a" data-position="fixed">
+    	<a href="#inicio" data-role="none"><img src="appbmx.png" class="logo"></a>
     	<a href="#perfil" class=" ui-btn ui-corner-all ui-btn-right ui-mini ui-btn-icon-notext ui-icon-user iu-btn-a">Volver</a>
     	<h1>BMXAPP</h1>
     </div>
@@ -489,9 +717,66 @@
            <p>- $500.000.</p>
           </div>
          </div>
+         
+         
+          	 <!-- Mapa de Google -->
+        <div id="map3">
+            <!-- map loads here... -->
+        </div>
+        <script>
+		$( document ).on("pagecreate", "#Optimus", function() {
+			var directionsDisplay = new google.maps.DirectionsRenderer();;
+			var directionsService = new google.maps.DirectionsService();
+			var map;
+			var origen = new google.maps.LatLng(4.6959449,-74.0936429);
+			var destino = new google.maps.LatLng(4.7540836,-74.1009135);
+			if ( navigator.geolocation ) {
+				function success(pos) {
+					// Location found, show map with these coordinates
+					drawMap(new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude));
+				}
+				function fail(error) {
+					drawMap(origen);  // Failed to find location, show default map
+				}
+				// Find the users current position.  Cache the location for 5 minutes, timeout after 6 seconds
+				navigator.geolocation.getCurrentPosition(success, fail, {maximumAge: 500000, enableHighAccuracy:true, timeout: 6000});
+			} else {
+				drawMap(origen);  // No geolocation support, show default map
+			}
+			function drawMap(latlng) {
+				var myOptions = {
+					zoom: 10,
+					center: latlng,
+					mapTypeId: google.maps.MapTypeId.ROADMAP
+				};
+				map = new google.maps.Map(document.getElementById("map3"), myOptions);
+				directionsDisplay.setMap(map);
+				calcRoute();
+				function calcRoute() {
+				  var request = {
+					  origin: origen,
+					  destination: destino,
+					  // Note that Javascript allows us to access the constant
+					  // using square brackets and a string value as its
+					  // "property."
+					  travelMode: google.maps.TravelMode['DRIVING']
+				  };
+				  directionsService.route(request, function(response, status) {
+					if (status == google.maps.DirectionsStatus.OK) {
+					  directionsDisplay.setDirections(response);
+					}
+				  });
+				}
+			}
+		});
+		</script>
+        <style>
+		#Optimus #map3 { width: 100%; height: 500px; padding: 0; }
+		</style>
+         	
         
     </div>
-	<div data-role="footer"data-theme="b" data-position="fixed">
+	<div data-role="footer"data-theme="A" data-position="fixed">
    		<div data-role="navbar">
     		<ul>
             	<li><a href="#inicio" class="ui-btn-active ui-icon-home ui-btn-icon-top">Inicio</a></li>
@@ -508,8 +793,8 @@
 <!--   *********** PAGINA NUEVE (Evento-Primo )******************          -->
 
 <div data-role="page" id="PrimoConcurso">
-	<div data-role="header" data-theme="b" data-position="fixed">
-    	<img src="appbmx.png" class="logo">
+	<div data-role="header" data-theme="a" data-position="fixed">
+    	<a href="#inicio" data-role="none"><img src="appbmx.png" class="logo"></a>
     	<a href="#perfil" class=" ui-btn ui-corner-all ui-btn-right ui-mini ui-btn-icon-notext ui-icon-user iu-btn-a">Volver</a>
     	<h1>BMXAPP</h1>
     </div>
@@ -528,7 +813,7 @@
          <div data-role="collapsible">
            <h3>Información del evento</h3>
            <p>Fecha: 24-Abril-2013</p>
-            <p>Lugar:Sur, Boyacá # 21-10, Bogotá, D.C.</p>
+            <p>Lugar: Parque de los Hippies, Chapinero, Bogotá, D.C.</p>
             <p>Horario: 3:00 pm - 7:00pm</p>
             <p>Organiza: Primo</p>
            </div>
@@ -538,9 +823,67 @@
            <p>Asi que te invitamos a que asistas y disfrutes de estos idolos del bmx, no te lo pierdas!.</p>
           </div>
          </div>
+         
+         
+         
+         	<!-- Mapa de Google -->
+        <div id="map2">
+            <!-- map loads here... -->
+        </div>
+        <script>
+		$( document ).on("pagecreate", "#PrimoConcurso", function() {
+			var directionsDisplay = new google.maps.DirectionsRenderer();;
+			var directionsService = new google.maps.DirectionsService();
+			var map;
+			var origen = new google.maps.LatLng(4.6959449,-74.0936429);
+			var destino = new google.maps.LatLng(4.6452806,-74.0616046);
+			if ( navigator.geolocation ) {
+				function success(pos) {
+					// Location found, show map with these coordinates
+					drawMap(new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude));
+				}
+				function fail(error) {
+					drawMap(origen);  // Failed to find location, show default map
+				}
+				// Find the users current position.  Cache the location for 5 minutes, timeout after 6 seconds
+				navigator.geolocation.getCurrentPosition(success, fail, {maximumAge: 500000, enableHighAccuracy:true, timeout: 6000});
+			} else {
+				drawMap(origen);  // No geolocation support, show default map
+			}
+			function drawMap(latlng) {
+				var myOptions = {
+					zoom: 10,
+					center: latlng,
+					mapTypeId: google.maps.MapTypeId.ROADMAP
+				};
+				map = new google.maps.Map(document.getElementById("map2"), myOptions);
+				directionsDisplay.setMap(map);
+				calcRoute();
+				function calcRoute() {
+				  var request = {
+					  origin: origen,
+					  destination: destino,
+					  // Note that Javascript allows us to access the constant
+					  // using square brackets and a string value as its
+					  // "property."
+					  travelMode: google.maps.TravelMode['DRIVING']
+				  };
+				  directionsService.route(request, function(response, status) {
+					if (status == google.maps.DirectionsStatus.OK) {
+					  directionsDisplay.setDirections(response);
+					}
+				  });
+				}
+			}
+		});
+		</script>
+        <style>
+		#PrimoConcurso #map2 { width: 100%; height: 500px; padding: 0; }
+		</style>
+            
         
     </div>
-	<div data-role="footer"data-theme="b" data-position="fixed">
+	<div data-role="footer"data-theme="A" data-position="fixed">
    		<div data-role="navbar">
     		<ul>
             	<li><a href="#inicio" class="ui-btn-active ui-icon-home ui-btn-icon-top">Inicio</a></li>
@@ -553,11 +896,11 @@
 <!--   *********** FIN PAGINA NUEVE (Evento-Primo)******************          -->
 
 
-<!--   *********** PAGINA DIEZ (Evento-TurinjiaBmx)******************          -->
+<!--   *********** PAGINA DIEZ (Evento-Pinar)******************          -->
 
 <div data-role="page" id="Pinar">
-	<div data-role="header" data-theme="b" data-position="fixed">
-    	<img src="appbmx.png" class="logo">
+	<div data-role="header" data-theme="a" data-position="fixed">
+    	<a href="#inicio" data-role="none"><img src="appbmx.png" class="logo"></a>
     	<a href="#perfil" class=" ui-btn ui-corner-all ui-btn-right ui-mini ui-btn-icon-notext ui-icon-user iu-btn-a">Volver</a>
     	<h1>BMXAPP</h1>
     </div>
@@ -576,7 +919,7 @@
          <div data-role="collapsible">
            <h3>Información del evento</h3>
            <p>Fecha: 24-Abril-2013</p>
-            <p>Lugar:Av 68, Bogotá, Bogotá, D.C.</p>
+            <p>Lugar:Parque Campanella Suba, Bogotá, D.C.</p>
             <p>Horario: 10:00 pm - 5:00pm</p>
             <p>Organiza: OscarBikes</p>
            </div>
@@ -589,8 +932,63 @@
           </div>
          </div>
         
+    	 <!-- Mapa de Google -->
+        <div id="map">
+            <!-- map loads here... -->
+        </div>
+        <script>
+		$( document ).on("pagecreate", "#Pinar", function() {
+			var directionsDisplay = new google.maps.DirectionsRenderer();;
+			var directionsService = new google.maps.DirectionsService();
+			var map;
+			var origen = new google.maps.LatLng(4.6959449,-74.0936429);
+			var destino = new google.maps.LatLng(4.753079,-74.085559);
+			if ( navigator.geolocation ) {
+				function success(pos) {
+					// Location found, show map with these coordinates
+					drawMap(new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude));
+				}
+				function fail(error) {
+					drawMap(origen);  // Failed to find location, show default map
+				}
+				// Find the users current position.  Cache the location for 5 minutes, timeout after 6 seconds
+				navigator.geolocation.getCurrentPosition(success, fail, {maximumAge: 500000, enableHighAccuracy:true, timeout: 6000});
+			} else {
+				drawMap(origen);  // No geolocation support, show default map
+			}
+			function drawMap(latlng) {
+				var myOptions = {
+					zoom: 10,
+					center: latlng,
+					mapTypeId: google.maps.MapTypeId.ROADMAP
+				};
+				map = new google.maps.Map(document.getElementById("map"), myOptions);
+				directionsDisplay.setMap(map);
+				calcRoute();
+				function calcRoute() {
+				  var request = {
+					  origin: origen,
+					  destination: destino,
+					  // Note that Javascript allows us to access the constant
+					  // using square brackets and a string value as its
+					  // "property."
+					  travelMode: google.maps.TravelMode['DRIVING']
+				  };
+				  directionsService.route(request, function(response, status) {
+					if (status == google.maps.DirectionsStatus.OK) {
+					  directionsDisplay.setDirections(response);
+					}
+				  });
+				}
+			}
+		});
+		</script>
+        <style>
+		#Pinar #map { width: 100%; height: 500px; padding: 0; }
+		</style>
+        
     </div>
-	<div data-role="footer"data-theme="b" data-position="fixed">
+	<div data-role="footer"data-theme="A" data-position="fixed">
    		<div data-role="navbar">
     		<ul>
             	<li><a href="#inicio" class="ui-btn-active ui-icon-home ui-btn-icon-top">Inicio</a></li>
@@ -605,20 +1003,62 @@
 <!--   *********** PAGINA ONCE (Noticia-1)******************          -->
 
 <div data-role="page" id="Noticia1">
-	<div data-role="header" data-theme="b" data-position="fixed">
-    	<img src="appbmx.png" class="logo">
+	<div data-role="header" data-theme="a" data-position="fixed">
+    	<a href="#inicio" data-role="none"><img src="appbmx.png" class="logo"></a>
     	<a href="#perfil" class=" ui-btn ui-corner-all ui-btn-right ui-mini ui-btn-icon-notext ui-icon-user iu-btn-a">Volver</a>
     	<h1>BMXAPP</h1>
     </div>
-	<div role="main" class="ui-content">    
-   		<h4>NUEVO VIDEO</h4>
+    
+    <div role="main" class="ui-content">    
+   		<h4>LOS NUEVOS VIDEOS DE NIKE</h4>
+    
+    <div class="ui-grid-a">
+            <div class="ui-block-a">
+            <a href="#Buenosaires" data-rel="popup" data-position-to="window" data-transition="fade"><img 	src="miniatura1.jpg" alt="Paris, France" class="popphoto" style="width:100%"></a>
+            </div>
+            <div class="ui-block-b"> 
+                  
+        	<a href="#taipei" data-rel="popup" data-position-to="window" data-transition="fade"><img 	src="taipei.jpg" alt="Paris, France" class="popphoto" style="width:100%"></a>
+            
+</div>
+            <div class="ui-block-c">
+          </div>
+	  </div><!-- /grid-b -->
+    
+    
+	
+    
+	  
+ <div data-role="popup" id="Buenosaires" data-overlay-theme="b" data-theme="b" data-corners="false">
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>   
+    <iframe width="560" height="315" src="http://www.youtube.com/embed/sXm-AIY5Eis" frameborder="0" allowfullscreen></iframe>
+   </div> 
+   
+   
+   
+   <div data-role="popup" id="taipei" data-overlay-theme="b" data-theme="b" data-corners="false">
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+   <iframe width="560" height="315" src="http://www.youtube.com/embed/_yJ56Xp8lK0" frameborder="0" allowfullscreen></iframe>
+   
+   </div> 
+   
+   
+<p>
+<script>
+$(document).one('pagecreate', '#Noticia1', function() {
+	$('#Noticia1 iframe').width(Math.floor($('#Noticia1').width()*.9));
+	$('#Noticia1 iframe').height(Math.floor($('#Noticia1').width()/4*3*.85));
+});
+</script> 
+</p>
+
+
+       
         
-        <iframe width="560" height="315" src=		"http://www.youtube.com/embed/sXm-AIY5Eis" frameborder="0" allowfullscreen></iframe>
-        
-        Garrett Reynolds, Dennis Enarson, Chad Kerley, Nigel Silvester, Kriss Kyle, se reunen en Buenos Aires Argentina y realizar este video para Nike BMX
+        Garrett Reynolds, Dennis Enarson, Chad Kerley, Nigel Silvester, Kriss Kyle, Alex Kennedy se reunen en Buenos Aires Argentina y Taipei para realizar estos asombrosos videos para NIKE.
         
 </div>
-	<div data-role="footer"data-theme="b" data-position="fixed">
+	<div data-role="footer"data-theme="A" data-position="fixed">
    		<div data-role="navbar">
     		<ul>
             	<li><a href="#inicio" class="ui-btn-active ui-icon-home ui-btn-icon-top">Inicio</a></li>
@@ -633,20 +1073,64 @@
 <!--   *********** PAGINA DOCE (Noticia-2)******************          -->
 
 <div data-role="page" id="Noticia2">
-	<div data-role="header" data-theme="b" data-position="fixed">
-    	<img src="appbmx.png" class="logo">
+	<div data-role="header" data-theme="a" data-position="fixed">
+    	<a href="#inicio" data-role="none"><img src="appbmx.png" class="logo"></a>
     	<a href="#perfil" class=" ui-btn ui-corner-all ui-btn-right ui-mini ui-btn-icon-notext ui-icon-user iu-btn-a">Volver</a>
     	<h1>BMXAPP</h1>
     </div>
 	<div role="main" class="ui-content">    
-   		<h4>¿CÓMO HACER BARSPIN?</h4>
+   		<h4>VIDEOS OJOBMX</h4>
         
-        <iframe width="560" height="315" src="http://www.youtube.com/embed/P6q93BHFZGE" frameborder="0" allowfullscreen></iframe>
-        
-        Aprende tips y secretos del Barspin junto a Snehider Roa, integrande del grupo OjoBmx de bogotá.
-        
+        <div class="ui-grid-b">
+            <div class="ui-block-a">
+            <a href="#barspin" data-rel="popup" data-position-to="window" 							data-transition="fade"><img 	src="miniatura2.jpg" alt="Paris, France" class="popphoto" style="width:100%"></a>
+            </div>
+            <div class="ui-block-b"> 
+            <a href="#rodriguez" data-rel="popup" data-position-to="window" data-transition="fade"><img 	src="fernando.jpg" alt="Paris, France" class="popphoto" style="width:100%"></a>         
 </div>
-	<div data-role="footer"data-theme="b" data-position="fixed">
+            <div class="ui-block-c">
+            <a href="#ferre" data-rel="popup" data-position-to="window" data-transition="fade"><img 	src="ferre.jpg" alt="Paris, France" class="popphoto" style="width:100%"></a>
+            
+          </div>
+	  </div><!-- /grid-b -->
+
+
+ <div data-role="popup" id="barspin" data-overlay-theme="b" data-theme="b" data-corners="false">
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>   
+    <iframe width="420" height="315" src="http://www.youtube.com/embed/vT9h7PPm4AA" frameborder="0" allowfullscreen></iframe>
+   </div> 
+   
+   
+   
+   <div data-role="popup" id="rodriguez" data-overlay-theme="b" data-theme="b" data-corners="false">
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+   <iframe width="560" height="315" src="http://www.youtube.com/embed/-uBul6gbT9U" frameborder="0" allowfullscreen></iframe>
+   
+   </div> 
+   
+   
+   <div data-role="popup" id="ferre" data-overlay-theme="b" data-theme="b" data-corners="false">
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+   <iframe width="560" height="315" src="http://www.youtube.com/embed/pzmoU3D7wx0" frameborder="0" allowfullscreen></iframe>
+   
+   </div>
+   
+   
+<p>
+<script>
+$(document).one('pagecreate', '#Noticia2', function() {
+	$('#Noticia2 iframe').width(Math.floor($('#Noticia2').width()*.9));
+	$('#Noticia2 iframe').height(Math.floor($('#Noticia2').width()/4*3*.85));
+});
+</script> 
+</p>
+
+
+
+
+Algunos de los integrantes del grupo OJOBMX de la ciudad de Bogotá han decidido realizar una serie de videos en los cuales permitan fácilitar y aclarar la forma en que se realizan distintos trucos revelando algunos secretos y tips.
+</div>
+	<div data-role="footer"data-theme="A" data-position="fixed">
    		<div data-role="navbar">
     		<ul>
             	<li><a href="#inicio" class="ui-btn-active ui-icon-home ui-btn-icon-top">Inicio</a></li>
@@ -661,25 +1145,57 @@
 <!--   *********** PAGINA TRECE (Noticia-3)******************          -->
 
 <div data-role="page" id="Noticia3">
-	<div data-role="header" data-theme="b" data-position="fixed">
-    	<img src="appbmx.png" class="logo">
+	<div data-role="header" data-theme="a" data-position="fixed">
+    	<a href="#inicio" data-role="none"><img src="appbmx.png" class="logo"></a>
     	<a href="#perfil" class=" ui-btn ui-corner-all ui-btn-right ui-mini ui-btn-icon-notext ui-icon-user iu-btn-a">Volver</a>
     	<h1>BMXAPP</h1>
+
+
     </div>
 	<div role="main" class="ui-content">         
         
         <div class="ui-body ui-body-a ui-corner-all">
-<h3>MARK WEBB</h3>
+<h3><center>MARK WEBB</center></h3>
 
 <img src="mark encabezado.jpg" width="250" height="200">
 
-      <p>Ciclista británico Mark Webb rompió la espalda en diciembre de 2007 durante la realización de un backflip en Southsea Skatepark , pero regresó a la escena del concurso del año siguiente en el estilo, ganar los X Games Internacionales. Más tarde ese año , él ganó la disciplina Mini en el Masters de BMX en Colonia , Alemania, y terminar en cuarto lugar en la disciplina de parque en el mismo evento. En 2009 , el primer año de Webby con el Dew Tour en los EE.UU. , hizo mandíbulas gota con sus movimientos técnicos increíbles y estilo creativo . Al entrar en la temporada con el objetivo de simplemente clasificarse para el circuito completo de cinco -stop, su talento brilló a través y después de un tercer puesto en la fase final , en Orlando , terminó el Tour con la cuarta plaza de la general . Nacido en 1984 en Southsea , Hampshire, Webby primero montó una BMX cuando tenía 14 años y comenzó a participar en los concursos a la edad de 20 . Desde sus humildes inicios , ya pesar de algunas lesiones graves ( no sólo la espalda rota , sino también un brazo roto y espinilla, un hombro dislocado y una variedad de conmociones cerebrales ) no ha dejado de complejo perfecto , atrevidos nuevos trucos y ganar algunos de los mayores concursos de BMX en todo el mundo . Bolsa de trucos de Webby está lleno de movimientos técnicos y complejos, incluyendo la primera «Década 360 ' del mundo. Él es particularmente fuerte en el mini- rampa, y es increíble sobre un salto caja también. Demostró sus habilidades sin igual en el transcurso parque cuando casualmente ejecutó un -360- tailwhip a footjam - nosepick en la práctica , en Salt Lake City en el Dew Tour en 2009.</p>
-  </div>
+      <p>El Rider británico Mark Webb rompió su espalda en diciembre de 2007 durante la realización de un backflip en el Skatepark deSouthsea, pero regresó a la escena del concurso del año siguientey así logró ganar los X Games Internacionales. </p>
+      <p>Más tarde ese año,  ganó en la disciplina Mini  Masters de BMX en Colonia , Alemania, al terminar en cuarto lugar en el estilo de park en el mismo evento. En 2009 , el primer año de Webby con el Dew Tour en los EE.UU. ,dejo con la boca abierta a más de uno con sus inreibles movimientos técnicos  y estilo creativo . Al entrar en la temporada con el objetivo de simplemente clasificarse para el circuito completo de Five-Stop, su talento brilló a través y después de un tercer puesto en la fase final , en Orlando , terminó el Tour con el cuerto lugar del evento.</p>
+      <p> Nacido en 1984 en Southsea , Hampshire, Webby primero montó una BMX cuando tenía 14 años y comenzó a participar en los concursos a la edad de 20 . Desde sus humildes inicios , y a pesar de algunas lesiones graves ( no sólo la espalda rota , sino también un brazo roto y espinilla, un hombro dislocado y una variedad de conmociones cerebrales ) no ha dejado de que le gane el miedo y ha probado nuevos atrevidos  trucos para así ganar algunos de los mayores concursos de BMX en todo el mundo. &quot;Bolsa de trucos de Webby&quot; está lleno de movimientos técnicos y complejos, incluyendo la primera «Década 360 ' del mundo. Él es particularmente fuerte en el mini- rampa, y es increíble sobre un salto caja también. Demostró sus habilidades sin igual en el transcurso parque cuando casualmente ejecutó un -360- tailwhip a footjam - nosepick en la práctica , en Salt Lake City en el Dew Tour en 2009.
+      </p>
+      <p>
+      <div class="ui-grid-b">
+      		 </div>
+            <div class="ui-block-b"> 
+            <a href="#mydream" data-rel="popup" data-position-to="window" data-transition="fade"><img 	src="mydream.jpg" alt="Paris, France" class="popphoto" style="width:100%"></a>         
+</div>
+            <div class="ui-block-c">
+            
+            
+          </div>
+	  </div><!-- /grid-b -->
+      
+      
+         <div data-role="popup" id="mydream" data-overlay-theme="b" data-theme="b" data-corners="false">
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+   <iframe width="560" height="315" src="http://www.youtube.com/embed/Hn58eAnmKEg" frameborder="0" allowfullscreen></iframe>
+   
+   </div>
+   
+   
+<p>
+<script>
+$(document).one('pagecreate', '#Noticia3', function() {
+	$('#Noticia3 iframe').width(Math.floor($('#Noticia3').width()*.9));
+	$('#Noticia3 iframe').height(Math.floor($('#Noticia3').width()/4*3*.85));
+});
+</script> 
+</p>
         
         
  
 </div>
-	<div data-role="footer"data-theme="b" data-position="fixed">
+	<div data-role="footer"data-theme="A" data-position="fixed">
    		<div data-role="navbar">
     		<ul>
             	<li><a href="#inicio" class="ui-btn-active ui-icon-home ui-btn-icon-top">Inicio</a></li>
@@ -694,15 +1210,15 @@
 <!--   *********** PAGINA CATORCE (Noticia-4)******************          -->
 
 <div data-role="page" id="Noticia4">
-	<div data-role="header" data-theme="b" data-position="fixed">
-    	<img src="appbmx.png" class="logo">
+	<div data-role="header" data-theme="a" data-position="fixed">
+    	<a href="#inicio" data-role="none"><img src="appbmx.png" class="logo"></a>
     	<a href="#perfil" class=" ui-btn ui-corner-all ui-btn-right ui-mini ui-btn-icon-notext ui-icon-user iu-btn-a">Volver</a>
     	<h1>BMXAPP</h1>
     </div>
 	<div role="main" class="ui-content">    
  
                 <div class="ui-body ui-body-a ui-corner-all">
-<h3>Matthias Dandois opina sobre la creciente tendencia a fusionar cuadros de street y flatland.</h3>
+<h3><CENTER>Matthias Dandois opina sobre la creciente tendencia a fusionar cuadros de street y flatland.</CENTER></h3>
 
 <img src="matias noticia.jpg" width="250" height="200">
 
@@ -713,7 +1229,7 @@ Durante años, el diseño de las bicis de flatland se ha caracterizado por evolu
         
         
 </div>
-	<div data-role="footer"data-theme="b" data-position="fixed">
+	<div data-role="footer"data-theme="A" data-position="fixed">
    		<div data-role="navbar">
     		<ul>
             	<li><a href="#inicio" class="ui-btn-active ui-icon-home ui-btn-icon-top">Inicio</a></li>
@@ -729,8 +1245,8 @@ Durante años, el diseño de las bicis de flatland se ha caracterizado por evolu
 <!--   *********** PAGINA QUINCE (Noticia-5)******************          -->
 
 <div data-role="page" id="Noticia5">
-	<div data-role="header" data-theme="b" data-position="fixed">
-    	<img src="appbmx.png" class="logo">
+	<div data-role="header" data-theme="a" data-position="fixed">
+    	<a href="#inicio" data-role="none"><img src="appbmx.png" class="logo"></a>
     	<a href="#perfil" class=" ui-btn ui-corner-all ui-btn-right ui-mini ui-btn-icon-notext ui-icon-user iu-btn-a">Volver</a>
     	<h1>BMXAPP</h1>
     </div>
@@ -750,10 +1266,14 @@ Durante años, el diseño de las bicis de flatland se ha caracterizado por evolu
     <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="wethepeople.jpg" style="max-height:512px;" alt="New York, USA"> Wethepeople
 </div>
 
-Wethepeople, Primo y Federal son las tres marcas de BMX más pópulares en la actualidad, ya que Riders de la talla de Ty Morrow, Simone Barraco, Garrett Reynolds, Chad Kerley, Dan Lacey y demás ya las están usando. 
+<p>&nbsp;</p>
+<p>Wethepeople, Primo y Federal son las tres marcas de BMX más pópulares en la actualidad, ya que Riders de la talla de Ty Morrow, Simone Barraco, Garrett Reynolds, Chad Kerley, Dan Lacey y demás ya las están usando. </p>
+<p>&nbsp;</p>
 
-    </div>
-	<div data-role="footer"data-theme="b" data-position="fixed">
+	    
+
+	</div>
+	<div data-role="footer"data-theme="A" data-position="fixed">
    		<div data-role="navbar">
     		<ul>
             	<li><a href="#inicio" class="ui-btn-active ui-icon-home ui-btn-icon-top">Inicio</a></li>
@@ -768,8 +1288,8 @@ Wethepeople, Primo y Federal son las tres marcas de BMX más pópulares en la ac
 <!--   *********** PAGINA DIECISEIS (Participar)******************          -->
 
 <div data-role="page" id="Participar">
-	<div data-role="header" data-theme="b" data-position="fixed">
-    	<img src="appbmx.png" class="logo">
+	<div data-role="header" data-theme="a" data-position="fixed">
+    	<a href="#inicio" data-role="none"><img src="appbmx.png" class="logo"></a>
     	<a href="#perfil" class=" ui-btn ui-corner-all ui-btn-right ui-mini ui-btn-icon-notext ui-icon-user iu-btn-a">Volver</a>
     	<h1>BMXAPP</h1>
     </div>
@@ -786,12 +1306,12 @@ Wethepeople, Primo y Federal son las tres marcas de BMX más pópulares en la ac
             
         </ul>
         
-        <a href="#confirmado" class="ui-btn ui-btn-inline">Aceptar</a>
+        <a href="#Listo" class="ui-btn ui-btn-inline">Aceptar</a>
         
 </div>
        
     </div>
-	<div data-role="footer"data-theme="b" data-position="fixed">
+	<div data-role="footer"data-theme="A" data-position="fixed">
    		<div data-role="navbar">
     		<ul>
             	<li><a href="#inicio" class="ui-btn-active ui-icon-home ui-btn-icon-top">Inicio</a></li>
@@ -804,67 +1324,11 @@ Wethepeople, Primo y Federal son las tres marcas de BMX más pópulares en la ac
 <!--   *********** FIN PAGINA DIECISEIS (Participar)******************          -->
 
 
-<!--   *********** PAGINA DIECISIETE (Asistir)******************          -->
+<!--   *********** PAGINA DIECISEIS (Asistir)******************          -->
 
 <div data-role="page" id="Asistir">
-	<div data-role="header" data-theme="b" data-position="fixed">
-    	<img src="appbmx.png" class="logo">
-    	<a href="#perfil" class=" ui-btn ui-corner-all ui-btn-right ui-mini ui-btn-icon-notext ui-icon-user iu-btn-a">Volver</a>
-    	<h1>BMXAPP</h1>
-</div>
-	<div role="main" class="ui-content">    
- 
-    <a href="#confirmado2" class="ui-btn ui-btn-inline">Confirmar Asistencia</a>
-
-  </div>
-   
-	<div data-role="footer"data-theme="b" data-position="fixed">
-   		<div data-role="navbar">
-    		<ul>
-            	<li><a href="#inicio" class="ui-btn-active ui-icon-home ui-btn-icon-top">Inicio</a></li>
-        		<li><a href="#eventos" class="ui-icon-plus ui-btn-icon-top">Eventos</a></li>
-   			</ul>
-		</div><!-- /navbar -->
-    </div>
-</div>
-
-<!--   *********** FIN PAGINA DIECISIETE (Asistir)******************          -->
-
-
-
-
-<!--   *********** PAGINA DIECIOCHO (confirmado)******************          -->
-
-<div data-role="page" id="confirmado">
-	<div data-role="header" data-theme="b" data-position="fixed">
-    	<img src="appbmx.png" class="logo">
-    	<a href="#perfil" class=" ui-btn ui-corner-all ui-btn-right ui-mini ui-btn-icon-notext ui-icon-user iu-btn-a">Volver</a>
-    	<h1>BMXAPP</h1>
-</div>
-	<div role="main" class="ui-content">    
- 
-                <div class="ui-body ui-body-a ui-corner-all">
-<h3>Confirmado, ya eres concursante de este evento.</h3>
-
-  </div>
-   
-	<div data-role="footer"data-theme="b" data-position="fixed">
-   		<div data-role="navbar">
-    		<ul>
-            	<li><a href="#inicio" class="ui-btn-active ui-icon-home ui-btn-icon-top">Inicio</a></li>
-        		<li><a href="#eventos" class="ui-icon-plus ui-btn-icon-top">Eventos</a></li>
-   			</ul>
-		</div><!-- /navbar -->
-    </div>
-</div>
-
-<!--   *********** FIN PAGINA DIECIOCHO (confirmado)******************          -->
-
-<!--   *********** PAGINA DIECIOCHO (confirmado)******************          -->
-
-<div data-role="page" id="confirmado2">
-	<div data-role="header" data-theme="b" data-position="fixed">
-    	<img src="appbmx.png" class="logo">
+	<div data-role="header" data-theme="a" data-position="fixed">
+    	<a href="#inicio" data-role="none"><img src="appbmx.png" class="logo"></a>
     	<a href="#perfil" class=" ui-btn ui-corner-all ui-btn-right ui-mini ui-btn-icon-notext ui-icon-user iu-btn-a">Volver</a>
     	<h1>BMXAPP</h1>
 </div>
@@ -872,10 +1336,10 @@ Wethepeople, Primo y Federal son las tres marcas de BMX más pópulares en la ac
  
                 <div class="ui-body ui-body-a ui-corner-all">
 <h3>Confirmada tu asistencia.</h3>
-
-  </div>
+     </div>
    
-	<div data-role="footer"data-theme="b" data-position="fixed">
+   
+	<div data-role="footer"data-theme="A" data-position="fixed">
    		<div data-role="navbar">
     		<ul>
             	<li><a href="#inicio" class="ui-btn-active ui-icon-home ui-btn-icon-top">Inicio</a></li>
@@ -885,8 +1349,10 @@ Wethepeople, Primo y Federal son las tres marcas de BMX más pópulares en la ac
     </div>
 </div>
 
-<!--   *********** FIN PAGINA DIECIOCHO (confirmado)******************          -->
+<!--   *********** FIN PAGINA DIECISEIS (Asistir)******************          -->
+
 
 
 </body>
 </html>
+
